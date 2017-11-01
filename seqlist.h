@@ -26,5 +26,7 @@ SeqListNode *SeqList_Get(SeqList *list, int pos);
 
 //Delete Pos Node
 SeqListNode* SeqList_Delete(SeqList* list, int pos);
+
+void SeqList_Destroy(SeqList* list);
 #endif
 

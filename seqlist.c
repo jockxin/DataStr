@@ -135,3 +135,18 @@ SeqListNode* SeqList_Delete(SeqList* list, int pos)
 	return temp;
 }
 
+void SeqList_Destroy(SeqList* list)
+{
+	TSeqList *tmp = (TSeqList*)list;
+	if(list == NULL)
+	{
+		return;
+	}
+	
+	if(tmp->node != NULL)
+	{
+		free(tmp->node);
+	}
+	free(tmp);
+	return;
+}

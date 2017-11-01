@@ -34,5 +34,7 @@ int main(void)
 		}
 		printf("age:%d\n",tmp->price);
 	}
+
+	SeqList_Destroy(list);
 	return 0;
 }
